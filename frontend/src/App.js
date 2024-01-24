@@ -1,10 +1,18 @@
 import './App.css';
+import { Provider } from 'react-redux';
+import userStore from './redux/userStore';
+import { BrowserRouter as Router, Routes, Route } from'react-router-dom';
+import UserWrapper from './components/user/UserWrapper';
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+   <Router>
+    <Provider store={userStore}>
+      <Routes>
+        <Route path="/" element={<UserWrapper />} />
+      </Routes>
+    </Provider>
+   </Router>
   );
 }
 
