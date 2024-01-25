@@ -5,7 +5,7 @@ import { Link } from'react-router-dom';
 
 const UserHome = () => {
 
-  const authentication_user = useSelector(state => state.authenticationUser);
+  const authentication_user = useSelector((state) => state.authentication_user);
 
 
 

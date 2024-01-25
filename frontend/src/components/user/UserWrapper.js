@@ -2,6 +2,7 @@ import React, {useEffect } from 'react'
 import { Routes, Route } from'react-router-dom';
 import { useSelector, useDispatch } from "react-redux";
 import UserHome from "../../pages/user/UserHome.js";
+import UserProfile from '../../pages/user/UserProfile.js';
 
 import isAuthUser from '../../utils/isAuthUser';
 import { set_Authentication } from "../../redux/authentication/authenticationSlice";
