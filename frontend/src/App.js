@@ -1,15 +1,9 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./containers/Home";
-import Error404 from "./containers/errors/Error404";
+
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="*" element={<Error404/>} />
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </Router>
+    <h1 className="text-3xl font-bold text-red-400 underline">Hello</h1>
+  
   );
 }
 
