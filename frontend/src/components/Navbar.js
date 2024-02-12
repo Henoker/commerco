@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from'react-router-dom'
 
 function Navbar() {
   return (
@@ -6,7 +7,8 @@ function Navbar() {
 	<div className="container flex justify-between h-16 mx-auto">
 		<ul className="items-stretch hidden space-x-3 lg:flex">
 			<li className="flex">
-				<a rel="noopener noreferrer" href="#!" className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-indigo-400 border-indigo-400">Link</a>
+				<Link to="/" className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-indigo-400 border-indigo-400">Home</Link>
+				{/* <a rel="noopener noreferrer" href="#!" className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-indigo-400 border-indigo-400">Link</a> */}
 			</li>
 			<li className="flex">
 				<a rel="noopener noreferrer" href="#!" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Link</a>
@@ -30,7 +32,7 @@ function Navbar() {
 						</svg>
 					</button>
 				</span>
-				<input type="search" name="Search" placeholder="Search..." className="w-32 py-2 pl-10 text-sm rounded-md sm:w-auto focus:outline-none bg-gray-800 text-gray-100 focus:bg-gray-900" />
+				<input type="search" name="Search" placeholder="Search..." className="w-32 py-2 pl-10 text-sm rounded-md sm:w-auto focus:outline-none bg-gray-200 text-gray-800 focus:bg-gray-300" />
 			</div>
 			<button type="button" className="hidden px-6 py-2 font-semibold rounded lg:block bg-indigo-400 text-gray-900">Log in</button>
 		</div>
