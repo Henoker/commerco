@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from './Container'
 import { Link } from'react-router-dom'
+import SearchFilter from './header/SearchFilter'
 
 function Navbar() {
   return (
@@ -46,7 +47,7 @@ function Navbar() {
               <Dashboard className="h-6 w-6" />
             </button>
           )} */}
-          {/* <SearchFilter /> */}
+          <SearchFilter />
           {/* <Auth /> */}
           {/* <MyCart /> */}
         </div>
