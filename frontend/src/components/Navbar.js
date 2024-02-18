@@ -2,6 +2,8 @@ import React from 'react'
 import Container from './Container'
 import { Link } from'react-router-dom'
 import SearchFilter from './header/SearchFilter'
+import Auth from './header/Auth'
+import MyCart from './header/MyCart'
 
 function Navbar() {
   return (
@@ -48,8 +50,8 @@ function Navbar() {
             </button>
           )} */}
           <SearchFilter />
-          {/* <Auth /> */}
-          {/* <MyCart /> */}
+          <Auth />
+          <MyCart />
         </div>
       </nav>
     </Container>
