@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # local apps
     "ecomapp.apps.EcomappConfig",
+    "users.apps.UsersConfig",
     # Third-party apps
     "rest_framework",
     "corsheaders",
@@ -45,6 +46,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "django_project.urls"
 
+AUTH_USER_MODEL = "users.CustomUser"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
