@@ -26,7 +26,6 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # local apps
-    "ecomapp.apps.EcomappConfig",
     "users.apps.UsersConfig",
     # Third-party apps
     "rest_framework",
